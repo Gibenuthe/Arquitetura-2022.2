@@ -27,7 +27,7 @@ const funcoes = {
 const app = express();
 app.use(bodyParser.json());
 
-app.post('/lembretes/:id/observacoes', async (req, res) => {
+app.put('/lembretes/:id/observacoes', async (req, res) => {
     const idObs = uuidv4();
     const {texto} = req.body;
 
